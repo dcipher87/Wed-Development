@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CatPhotoApp</title>
+  </head>
+
+  <body>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&family=Syne+Tactile&display=swap" rel="stylesheet">
+    <style media="screen">
+      /* h1 {
+        color: blue;
+      } */
+      body {
+        background-color: black;
+        color: purple;
+        font-family: monospace;
+      }
+      .red-text {
+        color: red !important;
+      }
+      .orange-text {
+        color: orange;
+      }
+      p {
+        font-size: 16px;
+      }
+      h1 {
+        font-family: "Syne Tactile", sans-serif;
+      }
+      .smaller-image {
+        width: 100px;
+      }
+      .thick-green-border {
+        border-color: green;
+        border-width: 10px;
+        border-style: solid;
+        /* border-radius: 5px; */
+        border-radius: 50%; /*makes border a cirle */
+      }
+      div {
+        background-color: silver;
+      }
+      #cat-photo-form {
+        background-color: green;
+      }
+      .box {
+        border: 3px solid black;
+      }
+      .red, .blue {
+        width: 150px;
+        height: 50px;
+        color: white;
+        text-align: center;
+        margin: 15px;
+      }
+      .yellow {
+        width: 500px;
+        height: 220px;
+        text-align: center;
+        align-items: center;
+      }
+      .red {
+        background-color: red;
+        padding: 15px;
+      }
+      .blue {
+        background-color: blue;
+        padding-top: 40px;
+        padding-left: 40px;
+        padding-bottom: 20px;
+        padding-right: 20px;
+        margin-top: 40px;
+        margin-left: 40px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+      }
+      .yellow {
+        background-color: yellow;
+        margin: 10px 20px 10px 20px;
+        padding: 40px 20px 40px 20px;
+      }
+      [type="radio"] {
+        margin: 20px 0px 20px 0px;
+      }
+      [type="checkbox"] {
+        margin: 20px 20px 20px 20px;
+      }
+    </style>
+
+    <h1 class="red-text orange-text"> <!--style="color: blue;"--> CatPhotoApp</h1>
+
+    <main>
+    <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
+    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back" class="smaller-image thick-green-border">
+
+    <div class="">
+      <p>Things cats love:</p>
+      <ul>
+        <li>Cat nip</li>
+        <li>Laser pointers</li>
+        <li>Lasangna</li>
+      </ul>
+      <ol>
+        <li>Flea treatment</li>
+        <li>Thunder</li>
+        <li>Other cats</li>
+      </ol>
+    </div>
+
+      <form class="" action="index.html" method="post" id="cat-photo-form">
+          <label for="indoor">
+            <input type="radio" name="indoor-outdoor" value="indoor" checked>Indoor
+          </label>
+          <label for="outdoor">
+            <input type="radio" name="indoor-outdoor" value="outdoor">Outdoor
+          </label><br>
+
+          <label for="loving">
+            <input type="checkbox" name="personality" value="loving" checked>Loving
+          </label>
+          <label for="Lazy">
+            <input type="checkbox" name="personality" value="lazy">Lazy
+          </label>
+          <label for="Energetic">
+            <input type="checkbox" name="personality" value="energetic">Energetic
+          </label><br>
+
+          <input type="text" name="" value="" placeholder="cat photo URL" required>
+          <button type="Submit" name="button">Submit</button>
+      </form><br>
+
+      <div class="yellow box">
+          <p>Margin</p>
+          <div class="red box">
+              <p>padding</p>
+          </div>
+          <br>
+          <div class="blue box">
+              <p>padding</p>
+          </div>
+      </div>
+
+    </main>
+
+  </body>
+</html>

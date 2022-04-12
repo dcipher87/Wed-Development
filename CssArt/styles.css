@@ -1,0 +1,35 @@
+/* Colors
+background = #fcf1f1
+circle = #f9e0ae
+pot = #835050
+cactus = #799351
+cactus lines = # 335dd2d
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:   border-box;
+}
+.canvas {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fcf1f1;
+  width: 100%;
+  height: 100vh;
+}
+.circle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 80vmin;
+  height: 80vmin;
+  border-radius: 50%;
+  background-color: #f9e0ae;
+}
+.pot {
+  position: absolute;
+
+}

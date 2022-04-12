@@ -333,6 +333,95 @@
       top: -25px;
       left: 0;
     }
+    @keyframes backdiv {
+      50% {background: #ffe6f2;}
+    }
+    @keyframes beat {
+      0% {
+        transform: scale(1) rotate(-45deg);
+      }
+      50% {transform: scale(0.6) rotate(-45deg);}
+    }
+    .stars-back {
+      position: fixed;
+      padding: 0;
+      margin: 0;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(black, #000099, #66c2ff, #ffcccc, #ffeee6);
+    }
+    .stars {
+      background-color: white;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      animation-iteration-count: infinite;
+    }
+    .star1 {
+      margin-top: 15%;
+      margin-left: 60%;
+      animation-name: twinkle1;
+      animation-duration: 1s;
+    }
+    .star2 {
+      margin-top: 5%;
+      margin-left: 25%;
+      animation-name: twinkle2;
+      animation-duration: 1s;
+    }
+
+    @keyframes twinkle1 {
+      50% { transform: scale(0.5); opacity: 0.5;}
+    }
+    @keyframes twinkle2 {
+      20% { transform: scale(0.5); opacity: 0.5;}
+    }
+    .star3 { margin-top: 15%; margin-left: 60%; animation-duration: 0.9s; animation-name: twinkle;}
+    .star4 { margin-top: 25%; margin-left: 25%; animation-duration: 1s; animation-name: twinkle;}
+    .star5 { margin-top: 10%; margin-left: 50%; animation-duration: 1.1s; animation-name: twinkle;}
+
+    @keyframes twinkle {
+      20% {transform: scale(0.5); opacity: 0.5;}
+    }
+    .falling-balls {
+      position: fixed;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-top: 50px;
+      background: linear-gradient(35deg, #cff, #fcc);
+      animation-name: bouncing;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+    /* .left-ball{ left: 27%; animation-timing-function: linear;} */
+    .left-ball { left: 27%; animation-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);}
+    .right-ball { left: 56%; animation-timing-function: ease-out}
+
+    @keyframes bouncing {
+      0% {top: 0px;}
+      100% {top: 249px;}
+    }
+    .bally {
+      position: fixed;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      top: 60%;
+      animation-name: jump;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+    .red1 { background: red; left: 25%; animation-timing-function: linear;}
+    .blue1 { background: blue; left: 50%; animation-timing-function: ease-out;}
+    /* .green1 { background: green; left: 75%; animation-timing-function: cubic-bezier(0.3, 0.4, 0.5, 1.6);} */
+    .green1 { background: green; left: 75%; animation-timing-function: cubic-bezier(0.311, 0.441, 0.444, 1.649);}
+
+    @keyframes jump {
+      50% {top: 10%;}
+    }
 
     </style>
   </head>
@@ -414,8 +503,24 @@
   <!-- <div class="disappearing"></div> -->
 
   <!-- <div class="bounce"></div> -->
-  <div class="beating-back"></div>
-  <div class="beating-heart"></div>
+
+  <!-- <div class="beating-back"></div>
+  <div class="beating-heart"></div> -->
+
+  <!-- <div class="stars-back"></div> -->
+  <!-- <div class="stars star1"></div>
+  <div class="stars star2"></div> -->
+  <!-- <div class="stars star3"></div>
+  <div class="stars star4"></div>
+  <div class="stars star5"></div> -->
+
+  <!-- <div class="falling-balls left-ball"></div>
+  <div class="falling-balls right-ball"></div> -->
+
+  <div class="bally red1"></div>
+  <div class="bally blue1"></div>
+  <div class="bally green1"></div>
+
 
   </body>
 </html>
