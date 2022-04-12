@@ -1,0 +1,127 @@
+<!-- Applied Visual Design exercise 19 - 25 -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Appled Visual Design 2</title>
+    <style>
+      h2 {
+        position: relative;
+        /* top: 15px; */
+        left: 15px; /*moves element to the right */
+        bottom: 10px; /*moves element up*/
+      }
+      section {
+        position: relative;
+      }
+      #search_bar {
+        position: absolute;
+        top: 50px;
+        right: 50px;
+      }
+      #nav_bar {
+        width: 100%;
+        background-color: #767676;
+        position: fixed;
+        top: 0;
+        right: 0;
+      }
+      nav ul {
+        margin: 0px;
+        padding: 5px 0px 5px 30px;
+      }
+      nav li {
+        display: inline;
+        margin-right: 20px;
+      }
+      a { text-decoration: none;}
+      #left {
+        width: 50%;
+        float: left;
+      }
+      #right {
+        width: 40%;
+        float: right;
+      }
+      aside, #left {
+        padding: 2px;
+        background-color: #ccc;
+      }
+      .z-index {
+        width: 60%;
+        height: 200px;
+        margin-top: 20px;
+      }
+      .first {
+        background-color: red;
+        position: absolute;
+        z-index: 2;
+      }
+      .second {
+        background-color: blue;
+        position: absolute;
+        left: 40px;
+        top: 550px;
+        z-index: 1;
+      }
+      .green {
+        background-color: green;
+        height: 100px;
+        width: 100px;
+        /* position: absolute;
+        top: 850px; */
+        margin: auto;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <h1>On Being Well-Positioned</h1>
+    <h2>Move me!</h2>
+    <p>I still think the h2 is where it normally sits.</p>
+
+    <h1>Welcome!</h1>
+    <section>
+      <form class="" id="search_bar" method="post">
+        <label for="search">Search: </label>
+        <input type="search" id="search" name="search" value="">
+        <input type="submit" name="submit" value="Go!">
+      </form>
+    </section>
+    <hr>
+
+    <header>
+      <h1>Welcome!</h1>
+      <nav id="nav_bar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <p>I shift up when the #nav_bar is fixed to the browser window.</p>
+
+    <header>
+      <h1>Welcome!</h1>
+    </header>
+
+    <section id="left">
+      <h2>Content</h2>
+      <p>Good stuff</p>
+    </section>
+
+    <aside class="right">
+      <h2>Sidebar</h2>
+      <p>Links</p>
+    </aside>
+
+    <div class="first z-index"></div>
+    <div class="second z-index"></div>
+
+    <div class="green"></div>
+
+  </body>
+</html>
