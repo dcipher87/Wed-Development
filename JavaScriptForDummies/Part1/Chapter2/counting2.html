@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Counting 2 - Script in body</title>
+  </head>
+  <body>
+    <h1>Let's Count!</h1>
+    <p id="theCount"></p>
+    <script type="text/javascript">
+      var count = 0;
+      while (count < 15) {
+        count++;
+        document.getElementById('theCount').innerHTML += count + "<br>"
+      }
+
+    </script>
+  </body>
+</html>
